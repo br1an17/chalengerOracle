@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="https://www.aluracursos.com/" target="blank">
+            <img src="./img/Vector.png" alt="Logo-Alura">
+        </a>
+
+    </header>
+
+    <main class="container">
+        <section class="content">
+            <form>
+                <div class="codificador">
+                    <textarea class="input" id="input" name="input"
+                        placeholder="Ingrese texto aqui..."></textarea>
+                    <label>
+                        Solo letras minusculas, sin acentos.
+                    </label>
+                </div>
+                <div class="botones">
+                    <button class="boton boton2" id="boton"
+                        type="button">Encriptar</button>
+                    <button class="boton" id="botonDecodedificador" type="button">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="decodificador">
+            <div class="decodificadorMensaje">
+                <img class="" src="./img/Muñeco.png" alt="Muñeco" width="100%">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="decodificadorMensaje2">
+                <textarea class="decodificadorDescripcion" id="mensaje" name="decoder"></textarea>
+                <input class="decodificadorBtn" id="copiar" type="submit" value="Copiar">
+                <div id="textoCopiado"></div>
+            </div>
+        </section>
+
+    </main>
+<footer>powered by 
+    <a href="https://www.linkedin.com/in/brian-paez/">Brian Paez.</a> </footer>
+
+
+</body>
+<script src="/index.js"></script>
+</html>
